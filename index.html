@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>OpenClinic-HomePage</title>
+    <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="container">
+           <a href="#" class="wordmark">Open<span>Clinic</span></a>
+          
+           <img class="mobile-menu" id="mobile-menu" src="Assets/menu.svg" alt="hamburger menu icon">
+           <nav>
+            <img class="mobile-exit" id="mobile-exit" src="Assets/exit.svg" alt="exit menu icon">
+               <ul class="primary-nav">
+                   <li><a class="current" href="#">Home</a></li>
+                   <li><a href="#">Featured</a></li>
+                   <li><a href="#">Pricing</a></li>
+               </ul>
+             
+
+
+               <ul class="secondary-nav">
+                
+                <li><a href="#">Contact</a></li>
+                <li><a class="premium-button" href="#">Go Premium</a></li>
+            </ul>
+           </nav> 
+      </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subheading">IT'S FAST, EASY &amp; FREE</p>
+                <h1>A Clinic Management Solution That's Free</h1>
+                <div class="hero-cta"> <!--For Arranging The Buttons In Columns-->
+                  <a href="#" class="primary-cta">Download For Free</a>
+                  <a href="#" class="watch-video-cta"><img src="Assets/watch.svg" alt="Video Button">Watch A Video</a>
+                </div>
+            </div>
+            <img class="hero-img" src="Assets/illustration.svg">
+        </div>
+    </section>
+
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Offline Solution</li>
+                <li>Slick UI</li>
+                <li>Manage Appointments</li>
+                <li>Create Reports</li>
+                <li>Graphical Analysis</li>
+            </ul>
+            <img class="features-section-image" src="Assets/holding-phone.jpg" alt="Person Holding Phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+<div class="container">
+    <ul>
+        <li>
+            <img src="Assets/person.jpg">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi eveniet placeat dolorum laborum incidunt commodi eum quisquam facilis, nobis blanditiis mollitia nam recusandae doloremque, inventore nisi! Non consequatur obcaecati expedita provident.</blockquote>
+            <cite>- Mary Jane</cite>
+        </li>
+        <li>
+            <img src="Assets/person.jpg">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi eveniet placeat dolorum laborum incidunt commodi eum quisquam facilis, nobis blanditiis mollitia nam recusandae doloremque, inventore nisi! Non consequatur obcaecati expedita provident.</blockquote>
+            <cite>- Mary Jane</cite>
+        </li>
+        <li>
+            <img src="Assets/person.jpg">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi eveniet placeat dolorum laborum incidunt commodi eum quisquam facilis, nobis blanditiis mollitia nam recusandae doloremque, inventore nisi! Non consequatur obcaecati expedita provident.</blockquote>
+            <cite>- Mary Jane</cite>
+        </li>
+    </ul>
+</div>
+
+    </section>
+
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea style="resize:none;" name="message" id="message" column="10" rows="10"></textarea>
+                    <input type="submit" class="send-message" id="send-message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.040363466306!2d31.131160014914414!3d29.978269978651007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x810c2f3fa2a52424!2sThe%20Great%20Pyramid%20of%20Giza!5e0!3m2!1sen!2sin!4v1630838096714!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        let hamburger=document.getElementById('mobile-menu');
+        let cross=document.getElementById('mobile-exit');
+        let nav=document.querySelector('nav');
+        hamburger.addEventListener('click',()=>{
+            nav.classList.add('menubtn');
+        });
+
+
+       cross.addEventListener('click',()=>{
+            nav.classList.remove('menubtn');
+        });
+    </script>
+</body>
+</html>
