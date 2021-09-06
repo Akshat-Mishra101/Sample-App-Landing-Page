@@ -208,9 +208,80 @@ nav{
 
 @media only screen and (min-width:770px) // media query
 {
-    li.current a{
-        font-weight:bold;
+
+    ul.features-list{
+        display:block;
+        margin-left:5em;
+        li{
+            font-size:1.4em;
+            &:before{
+             width:30px;
+             height:30px;
+            }
+        }
     }
+    .testimonials-section{
+      .container{
+          display: flex;
+          justify-content: center;
+        ul{
+            width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            width: 250px;
+
+        }
+    }
+}
+    }
+   .contact-section{
+       position:relative;
+       .container{
+           display:flex;
+       }
+   }
+
+   .contact-right{
+       position:absolute;
+       right:0;
+       top:0;
+       width:45%;
+       height:100%;
+       iframe{
+           margin-right:1.2em;
+           height:100%;
+       }
+   }
+    .features-section{
+        position:relative;
+    }
+    .features-section-image{
+               display:block;
+               position:absolute;
+               right:0;
+               width:350px;
+               bottom:-2em;
+    }
+ .hero{
+     display: flex;
+     justify-content: center;
+     .container{
+         text-align: left;
+         display:flex;
+         justify-content: space-around;
+         .hero-cta{
+             display: flex;
+         }
+         .watch-video-cta{
+
+            
+             margin-left:2em;
+         }
+     }
+ }
   .mobile-menu,.mobile-exit{
       display:none;
   }
@@ -221,10 +292,7 @@ nav{
       justify-content: unset;
       
   }
-  .wordMark{
-      font-size: 2em;
-      
-  }
+  
   .navbar nav{
       display:flex;
       justify-content: space-between;
@@ -233,6 +301,11 @@ nav{
       height:auto;
       width:100%;
       padding:0;
+     .container{.wordmark{
+    
+     font-size: 2em;
+    }
+}
       ul{
           display:flex;
       }
@@ -250,5 +323,57 @@ nav{
           margin-right:1.2em;
       }
       
+      .current{
+        font-weight:bolder;
+        &:hover{
+            font-weight:bold;
+        }
+     }
+      a:hover{
+        font-weight: unset;
+    }
+    li a.premium-button{
+       color:$primary-foreground-color;
+       border:3px solid $primary-foreground-color;
+       font-weight:bold;
+       border-radius: 5em;
+       margin-top:-.2em;
+       transition: 0.3s;
+       &:hover{
+           background-color: #007AF3;
+           color: #f2f2f2;
+       }
+    }
+      
   }
+}
+
+@media only screen and (min-width: 1450px){
+    .features-section{
+        &:before{
+            content:'';
+            position:absolute;
+            width:10%;
+            height:20em;
+            background:$primary-foreground-color;
+            left:0;
+            top:-4em;
+
+        }
+        &:after{
+            content:'';
+            position:absolute;
+            width:200px;
+            height:10em;
+            background:url('../Assets/dots.svg');
+            left:4em;
+            top:1em;
+
+        }
+    }
+    .features-section{
+        ul{
+            padding:6em;
+        }
+    }
 }
